@@ -159,11 +159,10 @@ public class Main {
 		
 		// EX3:
 		
-		int[] array2 = new int[2];
-				array2[0] = 2;
-				array2[1] = 3;
+		int[] array2 = controlStatement.nhapphantu(3);
+//				array2[0] = 2;
+//				array2[1] = 3;
 		System.out.println(controlStatement.arrayToString(array2));
-		
 		
 		
 	}
