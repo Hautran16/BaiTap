@@ -1,12 +1,15 @@
 package common;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
 import btDay4.Day1JavaLanguage;
 import btDay4.Day3DataStructure;
 import btDay4.HomeWork;
 
 public class BtDay4Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ParseException {
 
 //**************** Day 1 *****************	
 		// EX2:
@@ -36,6 +39,20 @@ public class BtDay4Main {
 
 		// EX7:
 		Day3DataStructure.printArray2D();
+
+// ******* Java Practices Day 3 *********
+
+		// EX1:
+		Day3DataStructure.generateRandomString();
+
+		// EX2:
+		Day3DataStructure.displayInformation();
+
+		// EX3:
+		Day3DataStructure.compareDate("11-05-2025", "12-05-2025");
+		
+		// EX4:
+		Day3DataStructure.displayTheDates();
 
 //********* JavaBasic ********	
 
@@ -77,24 +94,30 @@ public class BtDay4Main {
 
 		// EX11:
 //		HomeWork.calculateRevenue();
-		
+
 		// EX12:
 //		HomeWork.detectKey();
-		
+
 		// EX13:
-		HomeWork.chooseAnswer();
+//		HomeWork.chooseAnswer();
 
 		// EX14:
 		HomeWork.printResult(7);
-		
+
 		// EX15:
 		HomeWork.printResult2(3, 7);
-		
+
 		// EX16:
 //		HomeWork.question();
-		
+
 		// EX17;
-//		HomeWork.printTable();
+		HomeWork.printTable1();
+
+		// EX18:
+//		HomeWork.chooseTheCorrectAnswerUseDoWhile();
+
+		// EX17;
+//		HomeWork.printTable2();
 
 	}
 

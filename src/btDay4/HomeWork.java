@@ -172,7 +172,7 @@ public class HomeWork {
 		// chooseTheCorrectAnswer();
 		chooseTheCorrectAnswer2();
 	}
-
+		// Dùng if...else + đệ quy
 	public static void chooseTheCorrectAnswer() {
 		System.out.print("Enter your choice: ");
 		Scanner sc = new Scanner(System.in);
@@ -185,13 +185,13 @@ public class HomeWork {
 				chooseTheCorrectAnswer();
 				return;
 			} else {
-				System.out.println("Stop");
+				System.out.println("Stopped");
 				return;
 			}
 		}
 		System.out.println("Correct!");
 	}
-
+		// Dùng while()
 	public static void chooseTheCorrectAnswer2() {
 		System.out.print("Enter your choice: ");
 		Scanner sc = new Scanner(System.in);
@@ -210,8 +210,39 @@ public class HomeWork {
 		System.out.println("Correct!");
 	}
 
-	// EX17:
-	public static void printTable() {
+	// EX17: Dung FOR
+	public static void printTable1() {
+		System.out.println(" In ky tu ");
+		for(int i = 1; i<= 122; i++) {
+			char ascii = (char)i;
+			System.out.print(ascii);
+			if(i % 10 == 0)
+				System.out.println();
+		}
+	}
+	
+	// EX18: Dùng do...while()
+	public static void chooseTheCorrectAnswerUseDoWhile() {
+		Scanner sc = new Scanner(System.in);
+		String s = "";
+		do {
+			if(!s.equals("")) {
+				System.out.println("Incorrect!");
+				System.out.print("Again? press y to continue: ");
+				String s2 = sc.nextLine();
+				while (!s2.equals("y")) {
+					System.out.print("Press y to continue: ");
+					s2 = sc.nextLine();
+				}
+			}
+			System.out.print("Enter your choice: ");
+			s = sc.nextLine();
+		} while (!s.equals("c"));
+		System.out.println("Correct!");		
+	}
+	
+	// EX19:  Dùng do...while()
+	public static void printTable2() {
 		System.out.println(" In ky tu ");
 		int i = 1;
 		do {
