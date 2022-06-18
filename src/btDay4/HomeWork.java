@@ -123,6 +123,24 @@ public class HomeWork {
 			System.out.println("Khong duoc phep");
 	}
 
+	// EX13:
+	public static void chooseAnswer() {
+		System.out.println(
+			"What is the correct way to declare a variable to store an integer value in Java?\n"
+			+ "a. int 1x=10;\n"
+			+ "b. int x=10;\n"
+			+ "c. float x=10.0f;\n"
+			+ "d. string x=\"10\";\n"
+			+ "");
+		System.out.print("Enter your choice: ");
+		Scanner sc = new Scanner(System.in);
+		String result = sc.nextLine();
+		if(result.equals("c")) {
+			System.out.println("Correct");
+		} else
+			System.out.println("Incorrect");
+	}
+
 	// EX14
 	public static void printResult(int num) {
 		for (int i = num - 1; i >= 0; i--) {

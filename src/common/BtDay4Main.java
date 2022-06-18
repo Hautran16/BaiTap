@@ -80,6 +80,9 @@ public class BtDay4Main {
 		
 		// EX12:
 //		HomeWork.detectKey();
+		
+		// EX13:
+		HomeWork.chooseAnswer();
 
 		// EX14:
 		HomeWork.printResult(7);
@@ -88,7 +91,7 @@ public class BtDay4Main {
 		HomeWork.printResult2(3, 7);
 		
 		// EX16:
-		HomeWork.question();
+//		HomeWork.question();
 		
 		// EX17;
 //		HomeWork.printTable();
